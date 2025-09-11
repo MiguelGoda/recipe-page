@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --title-fonts: 'Young Serif', serif;
+    --body-fonts: 'Outfit', sans-serif;
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --font-size: 16px;
+}
+
+body {
+    background-color: var(--Grey-900);
+    min-height: 100vh;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--body-fonts);
+    font-size: var(--body-size);
+}
+
+.card {
+    max-width: 375px;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    padding: 30px;
+    background-color: var(--white);
+}
+
+h1 {
+    font-family: var(--title-fonts);
+    font-weight: 400;
+    color: var(--stone-900);
+}
+
+.description {
+    margin-top: 15px;
+    color: var(--stone-600);
+    line-height: 1.5;
+}
+
+.preparation {
+    background-color: var(--rose-50);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.title-preparation {
+    font-weight: 600;
+    color: var(--rose-800);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.list-preparation {
+    list-style: none;
+    color: var(--stone-600);
+    line-height: 1.5;
+}
+
+.list-preparation li {
+    display: flex;
+    gap: 5px;
+    align-items: center
+}
+
+.list-preparation li::before {
+    content: "\2022";
+    color: var(--rose-800);
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
